@@ -17,7 +17,7 @@ The lab description states:
 
 > This lab has an unprotected admin panel. Solve the lab by deleting the user `carlos`.
 
-![Lab description page showing the objective](images/01-lab-description.png)
+<img width="1532" height="784" alt="image" src="https://github.com/user-attachments/assets/1c6b7d28-eb9e-4706-8b2e-a85d7d302a46" />
 
 ---
 
@@ -25,7 +25,7 @@ The lab description states:
 
 After launching the lab, I landed on a standard shop front-end ("We Like To Shop") with a product catalogue, a **Home** link and a **My account** link. Nothing on the page pointed to an admin area, so I started with the cheapest and most common recon step for a hidden path: checking `robots.txt`.
 
-![Lab home page, an ordinary shop front-end](images/02-lab-home.png)
+<img width="1532" height="784" alt="image" src="https://github.com/user-attachments/assets/1c67ab99-8aa7-45ec-aadf-b20d1a8c404e" />
 
 ### Finding the hidden path
 
