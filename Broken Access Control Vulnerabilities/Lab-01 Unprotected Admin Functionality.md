@@ -42,7 +42,7 @@ User-agent: *
 Disallow: /administrator-panel
 ```
 
-![robots.txt disclosing /administrator-panel](images/03-robots-txt.png)
+<img width="1532" height="784" alt="image" src="https://github.com/user-attachments/assets/de21b70a-1a87-477d-8759-dda031a83dea" />
 
 `robots.txt` is meant to tell search-engine crawlers which paths not to index. It is **not** an access control mechanism, and anyone can read it. Developers often list sensitive paths in it, which ends up advertising exactly where an attacker should look.
 
@@ -74,7 +74,7 @@ The panel loaded without any authentication and listed the application's users, 
 - `wiener`
 - `carlos`
 
-![Admin panel accessible without authentication](images/04-admin-panel.png)
+<img width="1530" height="784" alt="image" src="https://github.com/user-attachments/assets/041dcc05-4122-46b4-b255-7403fd86e46c" />
 
 ### Step 2: Delete the target user
 
@@ -84,7 +84,7 @@ I clicked **Delete** next to `carlos`. The application responded with **"User de
 
 The lab banner changed to **Solved** and displayed *"Congratulations, you solved the lab!"*
 
-![Lab solved: carlos deleted](images/05-lab-solved.png)
+<img width="1527" height="784" alt="image" src="https://github.com/user-attachments/assets/6c5a54e2-6f70-4723-826b-ae999594aec1" />
 
 ---
 
