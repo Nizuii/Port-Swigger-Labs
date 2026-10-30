@@ -54,7 +54,7 @@ So, unlike the first two labs, this admin panel **does** check something before 
 
 I logged in with the supplied credentials `wiener:peter` and confirmed I was authenticated via the **My account** page (`/my-account?id=wiener`).
 
-![Logged in as wiener, My Account page](images/04-my-account-wiener.png)
+![Uploading image.png…]()
 
 I tried `/admin` again as `wiener`. The result was the same rejection message, confirming `wiener` is a normal, non-admin user.
 
