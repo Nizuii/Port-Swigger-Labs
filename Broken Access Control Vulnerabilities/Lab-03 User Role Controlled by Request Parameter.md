@@ -22,7 +22,7 @@ The lab description states:
 >
 > You can log in to your own account using the following credentials: `wiener:peter`
 
-![Lab description page showing the objective and credentials](images/01-lab-description.png)
+<img width="1529" height="784" alt="image" src="https://github.com/user-attachments/assets/46d34491-1db5-40fd-b491-fbb93d498c49" />
 
 ---
 
