@@ -70,7 +70,7 @@ The request to `/admin` carried this header:
 Cookie: session=0wgz7QcCpqzZySxrORDTtfeacPXrERc9; Admin=false
 ```
 
-![Burp HTTP history: GET /admin with cookie Admin=false, response says "only available if logged in as administrator"](images/05-burp-admin-false.png)
+<img width="1527" height="784" alt="image" src="https://github.com/user-attachments/assets/c2886baa-30a2-47c9-9836-2214098912c1" />
 
 This is the vulnerability: **the server trusts a client-supplied cookie (`Admin=false` / `Admin=true`) to decide authorization**, instead of checking the user's actual role against a server-side record (e.g. a database role tied to the session). Since cookies are fully controlled by the client, this value can simply be edited and replayed.
 
