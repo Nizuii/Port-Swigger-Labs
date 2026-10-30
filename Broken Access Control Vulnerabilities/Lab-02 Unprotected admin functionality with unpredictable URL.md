@@ -64,7 +64,7 @@ if (isAdmin) {
 }
 ```
 
-![Debugger view of the (index) source revealing /admin-spjtyk](images/04-devtools-source-admin-path.png)
+<img width="1535" height="784" alt="image" src="https://github.com/user-attachments/assets/62e702f4-afd8-4643-b8ec-2782e6beffff" />
 
 The script only adds the "Admin panel" link to the navigation when `isAdmin` is `true`. As a normal user, the link is never rendered on screen, but the admin URL, `/admin-spjtyk`, is still **shipped to every visitor** in the page source.
 
@@ -94,7 +94,7 @@ The admin panel loaded without any login, role check or redirect, listing two us
 - `wiener`
 - `carlos`
 
-![Admin panel accessible without authentication](images/05-admin-panel.png)
+<img width="1536" height="784" alt="image" src="https://github.com/user-attachments/assets/9257837c-e2fb-4f32-8166-6d0486dddb5a" />
 
 ### Step 2: Delete the target user
 
@@ -104,7 +104,7 @@ I clicked **Delete** next to `carlos`. The application responded with **"User de
 
 The lab banner changed to **Solved** and displayed *"Congratulations, you solved the lab!"*
 
-![Lab solved: carlos deleted](images/06-lab-solved.png)
+<img width="1530" height="784" alt="image" src="https://github.com/user-attachments/assets/46f5fe24-e4e1-4422-b327-a229c11dac04" />
 
 ---
 
