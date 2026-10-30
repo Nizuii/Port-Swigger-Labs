@@ -48,7 +48,7 @@ Admin interface only available if logged in as an administrator
 
 So, unlike the first two labs, this admin panel **does** check something before granting access.
 
-![/admin rejects an unauthenticated visitor](images/03-admin-rejected-unauthenticated.png)
+<img width="1530" height="784" alt="image" src="https://github.com/user-attachments/assets/69541599-7a01-40fb-8c41-688422f5e8a4" />
 
 ### Step 2: Log in as the provided low-privilege user
 
