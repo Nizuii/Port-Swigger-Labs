@@ -110,7 +110,6 @@ carlos - <a href="/admin/delete?username=carlos">Delete</a>
 
 <img width="1533" height="784" alt="image" src="https://github.com/user-attachments/assets/b13a5e70-ba1e-4595-9be9-eee884fe133e" />
 
-
 This confirmed the forged cookie was sufficient to bypass the access control check entirely.
 
 ### Step 3: Delete the target user
@@ -132,13 +131,13 @@ Location: /admin
 
 A `302` redirect back to `/admin` confirmed the deletion request was accepted and processed.
 
-![Burp Repeater: delete request for carlos returns 302 Found](images/07-burp-delete-carlos.png)
+<img width="1536" height="784" alt="image" src="https://github.com/user-attachments/assets/9ea75ff1-37fb-4d6d-8256-7a1178b3127f" />
 
 ### Step 4: Confirm in the browser
 
 I navigated back to `/admin` in Firefox (with the browser's own session, after the lab's state updated) and the lab banner changed to **Solved**, with the confirmation banner *"Congratulations, you solved the lab!"*
 
-![Lab solved banner](images/08-lab-solved.png)
+<img width="1535" height="784" alt="image" src="https://github.com/user-attachments/assets/b88e5cb5-1aea-46bc-9823-b2138b2575d1" />
 
 ---
 
