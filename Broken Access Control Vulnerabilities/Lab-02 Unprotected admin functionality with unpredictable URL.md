@@ -19,7 +19,7 @@ The lab description states:
 >
 > Solve the lab by accessing the admin panel, and using it to delete the user `carlos`.
 
-![Lab description page showing the objective](images/01-lab-description.png)
+<img width="1533" height="784" alt="image" src="https://github.com/user-attachments/assets/a36e740f-92dc-4bd7-9de6-0b962184918a" />
 
 ---
 
@@ -30,7 +30,7 @@ The lab opens on a standard shop front-end ("We Like To Shop") with a product ca
 1. An admin panel exists and is **not protected**.
 2. Its URL is **unpredictable**, so guessing paths like `/admin` is unlikely to work, but the location is **disclosed somewhere in the application**.
 
-![Lab home page, an ordinary shop front-end](images/02-lab-home.png)
+<img width="1533" height="784" alt="image" src="https://github.com/user-attachments/assets/7d824151-6c04-4654-aa8f-5810efa5ff7a" />
 
 ### Attempt 1: `robots.txt` (dead end)
 
@@ -42,7 +42,7 @@ https://<LAB-ID>.web-security-academy.net/robots.txt
 
 The server returned `"Not Found"`, so there was nothing useful here.
 
-![robots.txt returns Not Found](images/03-robots-txt-not-found.png)
+<img width="1535" height="784" alt="image" src="https://github.com/user-attachments/assets/9e42601a-27a7-4357-adcf-8db073be4855" />
 
 ### Attempt 2: Client-side source code (success)
 
