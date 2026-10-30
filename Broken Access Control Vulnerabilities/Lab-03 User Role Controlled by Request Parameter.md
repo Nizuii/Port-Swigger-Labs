@@ -30,7 +30,7 @@ The lab description states:
 
 The lab opens on a standard shop front-end ("We Like To Shop"). This lab is different from the previous two: it doesn't ask me to find a hidden admin URL, it tells me the path outright (`/admin`) and states that administrator status is decided by a **forgeable cookie**. The task is to find that cookie and forge it.
 
-![Lab home page, an ordinary shop front-end](images/02-lab-home.png)
+<img width="1530" height="784" alt="image" src="https://github.com/user-attachments/assets/a787fc14-4f69-41ed-8d13-3b51c0d8f0c1" />
 
 ### Step 1: Try the admin panel unauthenticated
 
