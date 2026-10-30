@@ -108,7 +108,8 @@ wiener - <a href="/admin/delete?username=wiener">Delete</a>
 carlos - <a href="/admin/delete?username=carlos">Delete</a>
 ```
 
-![Burp Repeater: Admin=true cookie returns the full admin panel with delete links](images/06-burp-admin-true-panel.png)
+<img width="1533" height="784" alt="image" src="https://github.com/user-attachments/assets/b13a5e70-ba1e-4595-9be9-eee884fe133e" />
+
 
 This confirmed the forged cookie was sufficient to bypass the access control check entirely.
 
