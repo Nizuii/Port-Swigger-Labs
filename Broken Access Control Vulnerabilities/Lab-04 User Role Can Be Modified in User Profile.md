@@ -22,7 +22,7 @@ The lab description states:
 >
 > You can log in to your own account using the following credentials: `wiener:peter`
 
-![Lab description page showing the objective and credentials](images/01-lab-description.png)
+<img width="1533" height="784" alt="image" src="https://github.com/user-attachments/assets/961953ce-f2ff-4035-ac38-3d4fd7644bf2" />
 
 This description is a significant hint: it names the exact field (`roleid`) and the exact value (`2`) that the server checks before granting admin access.
 
