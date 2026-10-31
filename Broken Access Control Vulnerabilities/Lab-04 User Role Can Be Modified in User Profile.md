@@ -38,7 +38,7 @@ The lab opens on a standard shop front-end ("We Like To Shop").
 
 I logged in with `wiener:peter` and landed on `/my-account?id=wiener`. The page showed my username and current email, with an **Update email** form.
 
-![My Account page, logged in as wiener, with the email update form](images/03-my-account-wiener.png)
+<img width="1530" height="784" alt="image" src="https://github.com/user-attachments/assets/ae7b8edd-c7b1-41b2-8c35-a5d4f022320c" />
 
 This "Update email" feature was the only user-controlled write operation visible on the page, so it was the natural place to probe for a way to influence other account fields.
 
