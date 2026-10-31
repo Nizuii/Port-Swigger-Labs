@@ -74,7 +74,7 @@ Content-Type: application/json; charset=utf-8
 }
 ```
 
-![Burp Repeater: original change-email request and response showing roleid:1](images/04-burp-original-request-roleid1.png)
+<img width="1538" height="784" alt="image" src="https://github.com/user-attachments/assets/7e5ba09a-8171-481c-82b1-2d8877b40425" />
 
 The response body revealed the full user object the server maintains, including a field I never submitted: **`"roleid":1`**. This is the critical finding. The endpoint is an **update** operation that echoes back the complete record, which strongly suggests the server might accept and apply *any* field present in the submitted JSON, not just `email`, a classic **mass assignment** vulnerability.
 
@@ -117,7 +117,7 @@ Content-Type: application/json; charset=utf-8
 }
 ```
 
-![Burp Repeater: modified request with roleid:2 in the body and response confirming roleid:2](images/05-burp-modified-request-roleid2.png)
+<img width="1535" height="784" alt="image" src="https://github.com/user-attachments/assets/5b725c9f-47de-42d0-a5c9-89433076e075" />
 
 The `roleid` field flipped from `1` to `2` purely because I included it in the request. No separate authorization check validated whether I was allowed to set this field.
 
@@ -128,7 +128,7 @@ I navigated back to the application in the browser. An **Admin panel** link now 
 - `wiener`
 - `carlos`
 
-![Admin panel now accessible, with Admin panel link in the nav and a Delete link for carlos](images/06-admin-panel-accessible.png)
+<img width="1529" height="784" alt="image" src="https://github.com/user-attachments/assets/329730c2-3580-4f4e-9499-076ab1581e94" />
 
 ### Step 4: Delete the target user
 
@@ -138,7 +138,7 @@ I clicked **Delete** next to `carlos`. The application responded with **"User de
 
 The lab banner changed to **Solved**, with the confirmation banner *"Congratulations, you solved the lab!"*
 
-![Lab solved: carlos deleted, banner shows Solved](images/07-lab-solved.png)
+<img width="1527" height="784" alt="image" src="https://github.com/user-attachments/assets/1cb8b858-69ee-4072-9ceb-42cc3ad0dd93" />
 
 ---
 
