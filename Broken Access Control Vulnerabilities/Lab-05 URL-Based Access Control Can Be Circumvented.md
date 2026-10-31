@@ -117,7 +117,7 @@ A `302` redirect back to `/admin` confirmed the deletion was processed successfu
 
 I reloaded the application in Firefox. The lab banner changed to **Solved**, with the confirmation banner *"Congratulations, you solved the lab!"*, and the **Admin panel** link was now reachable from the normal navigation as well.
 
-![Uploading image.png…]()
+<img width="1532" height="784" alt="image" src="https://github.com/user-attachments/assets/d6574e1b-5bee-4571-bbd6-e84170bf1911" />
 
 ---
 
