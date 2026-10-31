@@ -32,7 +32,7 @@ This description is a significant hint: it names the exact field (`roleid`) and 
 
 The lab opens on a standard shop front-end ("We Like To Shop").
 
-![Lab home page, an ordinary shop front-end](images/02-lab-home.png)
+<img width="1532" height="784" alt="image" src="https://github.com/user-attachments/assets/a89d32f3-a459-4616-8445-b7869c754a1f" />
 
 ### Step 1: Log in and inspect the account page
 
