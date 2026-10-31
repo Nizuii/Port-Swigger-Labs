@@ -19,7 +19,7 @@ The lab description states:
 >
 > To solve the lab, access the admin panel and delete the user `carlos`.
 
-![Lab description page, mentioning the unauthenticated /admin panel, the front-end block, and the X-Original-URL header](images/01-lab-description.png)
+<img width="1529" height="784" alt="image" src="https://github.com/user-attachments/assets/542c765d-704e-45e0-996c-260401f66240" />
 
 Unlike the earlier labs in this series, the vulnerability here isn't about discovering a hidden path or forging a role value. The lab tells me outright that `/admin` is unauthenticated on the back end, but a **front-end system** (such as a reverse proxy or load balancer) blocks direct requests to it. The challenge is to reach the back end **without the front end recognising the request as going to `/admin`**.
 
@@ -29,7 +29,7 @@ Unlike the earlier labs in this series, the vulnerability here isn't about disco
 
 The home page already displays an **Admin panel** link in its navigation, alongside **Home** and **My account**. This confirms the application itself assumes a visitor can reach `/admin` once authorised, but says nothing about how the front-end filtering works.
 
-![Lab home page with an "Admin panel" link already visible in the navigation](images/02-lab-home-admin-link-visible.png)
+<img width="1530" height="784" alt="image" src="https://github.com/user-attachments/assets/0fd615ef-017b-4d98-ba25-7369fd9fdef5" />
 
 ### Step 1: Try the admin panel directly
 
@@ -39,7 +39,7 @@ Clicking the **Admin panel** link sends a request to `/admin`. The response was:
 "Access denied"
 ```
 
-![Direct request to /admin returns "Access denied"](images/03-admin-access-denied.png)
+<img width="1530" height="784" alt="image" src="https://github.com/user-attachments/assets/7e86ca46-ca04-455f-82af-9144b3ccdd7c" />
 
 This confirms the front-end block described in the lab: something in front of the application is inspecting the request path and rejecting any request where the **path itself** is `/admin`.
 
@@ -81,7 +81,7 @@ wiener - <a href="/admin/delete?username=wiener">Delete</a>
 carlos - <a href="/admin/delete?username=carlos">Delete</a>
 ```
 
-![Burp Repeater: GET / with X-Original-Url: /admin returns the full admin panel, with delete links for wiener and carlos](images/04-burp-xoriginalurl-admin-panel.png)
+<img width="1532" height="784" alt="image" src="https://github.com/user-attachments/assets/d2c27d77-f60e-4cf0-a287-9f879aa471e5" />
 
 This confirmed the bypass: the front end only ever saw a request to `/`, while the back end actually served `/admin`.
 
@@ -111,13 +111,13 @@ Location: /admin
 
 A `302` redirect back to `/admin` confirmed the deletion was processed successfully.
 
-![Burp Repeater: POST / with X-Original-Url: /admin/delete? and body username=carlos returns 302 Found](images/05-burp-xoriginalurl-delete-carlos.png)
+<img width="1533" height="784" alt="image" src="https://github.com/user-attachments/assets/9295ccab-82d2-4d07-98fc-fe0f803ed453" />
 
 ### Step 4: Confirm in the browser
 
 I reloaded the application in Firefox. The lab banner changed to **Solved**, with the confirmation banner *"Congratulations, you solved the lab!"*, and the **Admin panel** link was now reachable from the normal navigation as well.
 
-![Lab solved banner, with Admin panel link visible in the nav](images/06-lab-solved.png)
+![Uploading image.png…]()
 
 ---
 
